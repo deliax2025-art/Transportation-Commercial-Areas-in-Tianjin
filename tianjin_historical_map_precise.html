@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ae5a24718ca5a806b37d8f5b30b87ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ae5a24718ca5a806b37d8f5b30b87ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ae5a24718ca5a806b37d8f5b30b87ec = L.map(
+                "map_2ae5a24718ca5a806b37d8f5b30b87ec",
+                {
+                    center: [39.13346000000001, 117.20417414285714],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9af6c596b261e3b87940515ceadab11b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9af6c596b261e3b87940515ceadab11b.addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_3ef9780e3f6d2c6ef275240af63cca09 = L.marker(
+                [39.131655, 117.205397],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_2c0d122a6f25ec725e540cf085ab6808 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f4cec7eac6f1dd58c22c8adea4a2046 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8ca0f6b451de69d98977db9851713405 = $(`<div id="html_8ca0f6b451de69d98977db9851713405" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             利顺德大饭店         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市和平区台儿庄路33号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1863</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 维多利亚风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 国家重点文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 天津现存最早的涉外饭店，中国第一家涉外饭店</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 仍为豪华酒店</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 可参观饭店内的利顺德博物馆</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.131655, 117.205397</p>         </div>     </div>     </div>`)[0];
+                popup_6f4cec7eac6f1dd58c22c8adea4a2046.setContent(html_8ca0f6b451de69d98977db9851713405);
+            
+        
+
+        marker_3ef9780e3f6d2c6ef275240af63cca09.bindPopup(popup_6f4cec7eac6f1dd58c22c8adea4a2046)
+        ;
+
+        
+    
+    
+            marker_3ef9780e3f6d2c6ef275240af63cca09.bindTooltip(
+                `<div>
+                     利顺德大饭店 (1863)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ef9780e3f6d2c6ef275240af63cca09.setIcon(icon_2c0d122a6f25ec725e540cf085ab6808);
+            
+    
+            var circle_092e249dc658734727f53f5a46016a94 = L.circle(
+                [39.131655, 117.205397],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_d3e4d4fc5e47fb4ed3cb78cbc6b20113 = L.marker(
+                [39.128946, 117.203179],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_78103db439beabba053db89ee76c8fc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dc408840d80b2729762e62fd7b1b6b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_85ee86e7b168e2f81309fe3c9a2c8a7c = $(`<div id="html_85ee86e7b168e2f81309fe3c9a2c8a7c" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             天津劝业场         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市和平区和平路290号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1926</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 折衷主义风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 天津最著名的百货商场，法租界时期的商业中心，由法国建筑师设计</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 仍为大型百货商场</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 八层大楼，曾是天津最高建筑</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.128946, 117.203179</p>         </div>     </div>     </div>`)[0];
+                popup_0dc408840d80b2729762e62fd7b1b6b9.setContent(html_85ee86e7b168e2f81309fe3c9a2c8a7c);
+            
+        
+
+        marker_d3e4d4fc5e47fb4ed3cb78cbc6b20113.bindPopup(popup_0dc408840d80b2729762e62fd7b1b6b9)
+        ;
+
+        
+    
+    
+            marker_d3e4d4fc5e47fb4ed3cb78cbc6b20113.bindTooltip(
+                `<div>
+                     天津劝业场 (1926)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3e4d4fc5e47fb4ed3cb78cbc6b20113.setIcon(icon_78103db439beabba053db89ee76c8fc5);
+            
+    
+            var circle_58cd60beaf4bdb2aeacd4ebda663f90d = L.circle(
+                [39.128946, 117.203179],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_1c8f6da9b541ddb797fdd47f5e9082ed = L.marker(
+                [39.112987, 117.201256],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_75a933e5740e9d50dd680a720f961961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ed31f6b2aa1096bb6d3e42e2baab041 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d1ae33a6c8983a97965f641fc0af5d16 = $(`<div id="html_d1ae33a6c8983a97965f641fc0af5d16" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             民园体育场         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市和平区重庆道83号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1920</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 英式古典风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 原英租界体育场，1926年由英国设计师设计改建，现改造为民园广场</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 市民休闲广场</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 跑道和看台保留原貌，地下有特色店铺</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.112987, 117.201256</p>         </div>     </div>     </div>`)[0];
+                popup_8ed31f6b2aa1096bb6d3e42e2baab041.setContent(html_d1ae33a6c8983a97965f641fc0af5d16);
+            
+        
+
+        marker_1c8f6da9b541ddb797fdd47f5e9082ed.bindPopup(popup_8ed31f6b2aa1096bb6d3e42e2baab041)
+        ;
+
+        
+    
+    
+            marker_1c8f6da9b541ddb797fdd47f5e9082ed.bindTooltip(
+                `<div>
+                     民园体育场 (1920)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c8f6da9b541ddb797fdd47f5e9082ed.setIcon(icon_75a933e5740e9d50dd680a720f961961);
+            
+    
+            var circle_4f9596b70fa131a281a3274f7b9f2bb1 = L.circle(
+                [39.112987, 117.201256],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_8989da5f2966effc9b44c94d0b492428 = L.marker(
+                [39.116789, 117.224543],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_3ef4dbd2c8df11fb499b4953721d4243 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82041de3a555d595a3567713d45f17cb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_06e49557ea7d8394189dbe6d986797e6 = $(`<div id="html_06e49557ea7d8394189dbe6d986797e6" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             德国俱乐部         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市河西区解放南路273号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1907</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 德国新文艺复兴风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 原德国侨民社交俱乐部，又称康科迪亚俱乐部</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 政协俱乐部，文物保护单位</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 建筑外观可参观，内部一般不对外开放</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.116789, 117.224543</p>         </div>     </div>     </div>`)[0];
+                popup_82041de3a555d595a3567713d45f17cb.setContent(html_06e49557ea7d8394189dbe6d986797e6);
+            
+        
+
+        marker_8989da5f2966effc9b44c94d0b492428.bindPopup(popup_82041de3a555d595a3567713d45f17cb)
+        ;
+
+        
+    
+    
+            marker_8989da5f2966effc9b44c94d0b492428.bindTooltip(
+                `<div>
+                     德国俱乐部 (1907)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8989da5f2966effc9b44c94d0b492428.setIcon(icon_3ef4dbd2c8df11fb499b4953721d4243);
+            
+    
+            var circle_158d3e48efda75628c5d3bad60c6d253 = L.circle(
+                [39.116789, 117.224543],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_14cad5a6e72a61cbad30df15cc778ec2 = L.marker(
+                [39.147622, 117.176385],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_becf001d1c6d3cb12a7ff5e9554f3964 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c0023a4bf3add77d68de8395df1a530 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fe83baac50c17897d2695f9808431f80 = $(`<div id="html_fe83baac50c17897d2695f9808431f80" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             谦祥益绸布店         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市红桥区估衣街</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1840</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 中国传统商铺风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市历史风貌建筑</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 清代老字号绸布店，天津传统商业的代表</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 历史遗迹，传统商业代表</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 位于估衣街，周边有多家老字号</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.147622, 117.176385</p>         </div>     </div>     </div>`)[0];
+                popup_4c0023a4bf3add77d68de8395df1a530.setContent(html_fe83baac50c17897d2695f9808431f80);
+            
+        
+
+        marker_14cad5a6e72a61cbad30df15cc778ec2.bindPopup(popup_4c0023a4bf3add77d68de8395df1a530)
+        ;
+
+        
+    
+    
+            marker_14cad5a6e72a61cbad30df15cc778ec2.bindTooltip(
+                `<div>
+                     谦祥益绸布店 (1840)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14cad5a6e72a61cbad30df15cc778ec2.setIcon(icon_becf001d1c6d3cb12a7ff5e9554f3964);
+            
+    
+            var circle_62d34e055e1e21c284b01f0bc452437e = L.circle(
+                [39.147622, 117.176385],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_176cbfa9fa74741ed7325839bc576b76 = L.marker(
+                [39.129432, 117.203892],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_588bebb918fbf672dd3ce443a9517b41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de13e1e2c0b2a09d598d910e28c67b07 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69707a813ff61358d7109ad17a667e08 = $(`<div id="html_69707a813ff61358d7109ad17a667e08" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             浙江兴业银行         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市和平区和平路319号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1921</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 古典主义风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 近代金融建筑代表，由华信工程司沈理源设计</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 文物保护单位，现为中国银行使用</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 建筑立面保存完好，位于金融街</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.129432, 117.203892</p>         </div>     </div>     </div>`)[0];
+                popup_de13e1e2c0b2a09d598d910e28c67b07.setContent(html_69707a813ff61358d7109ad17a667e08);
+            
+        
+
+        marker_176cbfa9fa74741ed7325839bc576b76.bindPopup(popup_de13e1e2c0b2a09d598d910e28c67b07)
+        ;
+
+        
+    
+    
+            marker_176cbfa9fa74741ed7325839bc576b76.bindTooltip(
+                `<div>
+                     浙江兴业银行 (1921)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_176cbfa9fa74741ed7325839bc576b76.setIcon(icon_588bebb918fbf672dd3ce443a9517b41);
+            
+    
+            var circle_22c0b86b759561e2e382332126ea7d8f = L.circle(
+                [39.129432, 117.203892],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var marker_03c94f02eddd718b7bff286833e8f006 = L.marker(
+                [39.166789, 117.214567],
+                {
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var icon_6622b29fdb6c9505aec2884fcea2dd1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1bd40f8263737a08b25e83fe95afc75 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6f19849d1fc4ff41581573980c980909 = $(`<div id="html_6f19849d1fc4ff41581573980c980909" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px; font-family: Arial, sans-serif;">         <h3 style="margin:0; color:#2c3e50; border-bottom: 2px solid #3498db; padding-bottom:5px;">             天津北站         </h3>         <div style="margin: 10px 0;">             <p style="margin:5px 0;"><strong>📍 地址:</strong> 天津市河北区中山路1号</p>             <p style="margin:5px 0;"><strong>🏛️ 建成年代:</strong> 1903</p>             <p style="margin:5px 0;"><strong>🎨 建筑风格:</strong> 德式新古典风格</p>             <p style="margin:5px 0;"><strong>🛡️ 保护级别:</strong> 天津市文物保护单位</p>             <p style="margin:5px 0;"><strong>📜 历史:</strong> 原天津西站（老北站），1903年由德国人设计建造</p>             <p style="margin:5px 0;"><strong>🏢 现状:</strong> 仍在使用中的铁路客运站</p>             <p style="margin:5px 0;"><strong>💡 游览提示:</strong> 仍在使用，可体验历史车站氛围</p>             <p style="margin:5px 0;"><strong>🌐 坐标:</strong> 39.166789, 117.214567</p>         </div>     </div>     </div>`)[0];
+                popup_a1bd40f8263737a08b25e83fe95afc75.setContent(html_6f19849d1fc4ff41581573980c980909);
+            
+        
+
+        marker_03c94f02eddd718b7bff286833e8f006.bindPopup(popup_a1bd40f8263737a08b25e83fe95afc75)
+        ;
+
+        
+    
+    
+            marker_03c94f02eddd718b7bff286833e8f006.bindTooltip(
+                `<div>
+                     天津北站 (1903)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03c94f02eddd718b7bff286833e8f006.setIcon(icon_6622b29fdb6c9505aec2884fcea2dd1f);
+            
+    
+            var circle_ceb85b61fd0116af7532e6cfedce8df7 = L.circle(
+                [39.166789, 117.214567],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+        
+    
+            var layer_control_541c341b305e5ca024fd7f869253929d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9af6c596b261e3b87940515ceadab11b,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_541c341b305e5ca024fd7f869253929d = L.control.layers(
+                layer_control_541c341b305e5ca024fd7f869253929d_layers.base_layers,
+                layer_control_541c341b305e5ca024fd7f869253929d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_2ae5a24718ca5a806b37d8f5b30b87ec);
+
+        
+</script>
+</html>
